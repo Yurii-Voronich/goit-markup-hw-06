@@ -56,11 +56,27 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* mobil */
 .container {
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
-  width: 1158px;
-  padding: 0 15px;
+  padding: 0 16px;
 }
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* desctop */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 /* ================ BASIC ================ */
 
 /* ================ HEADER ================ */
@@ -73,11 +89,12 @@ body {
   display: flex;
   align-items: center;
 }
+
 .page-header-nav {
   display: flex;
   align-items: center;
 }
-
+/* mobil */
 .page-header-logo {
   font-family: var(--logo-font);
   font-weight: 700;
@@ -86,16 +103,61 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+  margin-right: 149px;
 }
 .page-header-studio {
   color: #2e2f42;
 }
-.page-header-nav-list {
-  display: flex;
-  gap: 40px;
-  position: relative;
+/* tablet */
+@media screen and (min-width: 768px) {
+  .page-header-logo {
+    margin-right: 120px;
+  }
 }
+
+@media screen and (min-width: 1158px) {
+  .page-header-logo {
+    margin-right: 76px;
+  }
+}
+.open-menu-button {
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .open-menu-button {
+    display: none;
+  }
+}
+
+/* mobil */
+.page-header-nav-list {
+  display: none;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .page-header-nav-list {
+    display: flex;
+    gap: 40px;
+    position: relative;
+  }
+}
+/* desctop */
+@media screen and (min-width: 1158px) {
+  .page-header-nav-list {
+    display: flex;
+    gap: 40px;
+    position: relative;
+  }
+}
+
 .page-header-nav-list-item-link {
   font-weight: 500;
   font-size: 16px;
@@ -120,14 +182,32 @@ body {
 .first-link {
   color: #404bbf;
 }
+
 .header-address-box {
   display: flex;
   margin-left: auto;
 }
+/* mobil */
 .header-address-box-list {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
+/* tablet */
+@media screen and (min-width: 768px) {
+  .header-address-box-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+/* desctop */
+@media screen and (min-width: 1158px) {
+  .header-address-box-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
 .header-address-box-list-item-link {
   font-size: 16px;
   line-height: 1.5;
