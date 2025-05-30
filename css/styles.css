@@ -345,38 +345,112 @@ body {
 .hero-section-button:focus {
   background-color: #404bbf;
 }
+/* ============================== /HERO =================================== */
 
-/* features section */
+/* ============================== FEATURES =================================== */
+
 .features-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+/* desc */
+@media screen and (min-width: 1158px) {
+  .features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+/* mobil */
 .features-section-list {
   display: flex;
-  gap: 24px;
-}
-.features-section-list-item {
-  width: calc((100% - 72px) / 4);
-}
-.features-icon-wrapper {
-  display: flex;
+  flex-direction: column;
+  gap: 72px;
   align-items: center;
-  justify-content: center;
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
 }
+/* tablet */
+@media screen and (min-width: 768px) {
+  .features-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .features-section-list {
+    gap: 24px;
+  }
+}
+
+/* mobil */
+.features-section-list-item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features-section-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .features-section-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+}
+
+/* mobil */
+.features-icon-wrapper {
+  display: none;
+}
+/* desctop */
+@media screen and (min-width: 1158px) {
+  .features-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+}
+
 .features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-align: center;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 768px) {
+  .features-title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+  }
+}
+.features-description-text {
+  color: #434455;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 1158px) {
+  .features-description-text {
+    font-weight: 400;
+  }
+}
+/* ============================== /FEATURES =================================== */
+/* ============================== TEAM =================================== */
 .team-member-title {
   font-weight: 500;
   font-size: 20px;
@@ -395,7 +469,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/* team section */
+
 .team-section {
   padding: 120px 0;
   background-color: #f4f4fd;
@@ -450,7 +524,9 @@ body {
 .social-list-icons-item-link:focus {
   background-color: #404bbf;
 }
-/* portfolio */
+/* ============================== /TEAM =================================== */
+
+/* ============================== PORTFOLIO =================================== */
 .portfolio-section {
   padding: 120px 0;
 }
@@ -515,7 +591,10 @@ body {
 .portfolio-section-list-item:hover .overlay-text {
   transform: translateY(0%);
 }
-/* footer */
+
+/* ============================== /PORTFOLIO =================================== */
+
+/* ============================== FOOTER =================================== */
 .page-footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -627,7 +706,7 @@ footer .social-list-icons-item-link:focus {
 .button-icon {
   margin-left: 16px;
 }
-
+/* ============================== /FOOTER =================================== */
 /* ============================= MODAL WiNDOW======================= */
 .modal-overlay {
   position: fixed;
