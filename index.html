@@ -24,11 +24,6 @@
           <a href="./index.html" class="page-header-logo">
             Web<span class="page-header-studio">Studio</span></a
           >
-          <button class="open-menu-button" type="button">
-            <svg class="open-menu-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
           <ul class="page-header-nav-list">
             <li class="page-header-nav-list-item">
               <a
@@ -45,7 +40,11 @@
             </li>
           </ul>
         </nav>
-
+        <button class="open-menu-button" type="button">
+          <svg class="open-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <address class="header-address-box">
           <ul class="header-address-box-list">
             <li class="header-address-box-list-item">
@@ -68,7 +67,7 @@
     </header>
     <main>
       <!----------------hero section --------------------------------------------------------->
-    <section class="hero-section">
+      <section class="hero-section">
         <div class="container">
           <h1 class="hero-section-title">
             Effective Solutions for Your Business
@@ -79,8 +78,8 @@
         </div>
       </section>
 
-    <!------------------------------ second sextion (features) -------------------------------------->
-    <section class="features-section">
+      <!------------------------------ second sextion (features) -------------------------------------->
+      <section class="features-section">
         <div class="container">
           <h2 class="visually-hidden">features</h2>
           <ul class="features-section-list">
@@ -135,8 +134,8 @@
           </ul>
         </div>
       </section>
-    <!------------------------------------ third section (our team) --------------------------------------->
-    <!-- <section class="team-section">
+      <!------------------------------------ third section (our team) --------------------------------------->
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-section-list">
@@ -311,8 +310,8 @@
           </ul>
         </div>
       </section> -->
-    <!------------------------------------------------- 4 th section (our portfolio) ------------------------------------------------->
-    <!-- <section class="portfolio-section">
+      <!------------------------------------------------- 4 th section (our portfolio) ------------------------------------------------->
+      <!-- <section class="portfolio-section">
         <div class="container">
           <h2 class="portfolio-section-title">Our Portfolio</h2>
           <ul class="portfolio-section-list">
@@ -434,8 +433,8 @@
             </li>
           </ul>
         </div>
-      </section> 
-   </main>
+      </section> -->
+    </main>
     <!----------------------------------------------------FOOTER ----------------------------------------------------------------->
     <!-- <footer class="page-footer">
       <div class="container">
@@ -503,8 +502,77 @@
         </div>
       </div>
     </footer> -->
+    <!------------------------------------------------------------------MOBILE MENU ------------------------------------------------------->
+    <div class="mobile-menu is-open">
+      <div class="mobile-menu-container">
+        <button class="close-mobile-menu-button" type="button">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close-cross"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-list-item">
+              <a href="./index.html" class="mobile-nav-list-link">Studio</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a href="" class="mobile-nav-list-link">Portfolio</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a href="" class="mobile-nav-list-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-adress-box">
+          <ul class="mobile-adress-list">
+            <li class="mobile-adress-list-item">
+              <a href="tel:+110001111111" class="mobile-adress-list-item-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-adress-list-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-adress-list-item-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-list">
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="moblie-menu-social-list-link">
+              <svg class="moble-menu-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="moblie-menu-social-list-link">
+              <svg class="moble-menu-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="moblie-menu-social-list-link">
+              <svg class="moble-menu-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="moblie-menu-social-list-link">
+              <svg class="moble-menu-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!------------------------------------------------------------------------- MODAL ------------------------------------------------------->
-    <!-- <div class="modal-overlay">
+    <div class="modal-overlay">
       <div class="modal-window">
         <button class="close-modal-window-button" type="button">
           <svg width="8" height="8" class="close-modal-window-icon">
@@ -584,7 +652,6 @@
           <button class="submit-modal-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
-  -->
 </html>

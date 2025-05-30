@@ -129,6 +129,7 @@ body {
   background-color: transparent;
   margin-top: 16px;
   margin-bottom: 16px;
+  line-height: 0;
 }
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -708,6 +709,83 @@ footer .social-list-icons-item-link:focus {
 }
 /* ============================== /FOOTER =================================== */
 /* ============================= MODAL WiNDOW======================= */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #ffffff;
+  /* padding-top: 24px;
+  padding-bottom: 40px; */
+  transform: translateX(100%);
+  transition: translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  transform: translateX(0%);
+}
+.close-mobile-menu-button {
+  padding: 0;
+  line-height: 0;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  border-color: #2e2f421a;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.mobile-menu-container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 72px;
+  margin-bottom: 168px;
+}
+.mobile-menu-social-list {
+  display: flex;
+  column-gap: 40px;
+  margin-bottom: 40px;
+}
+.mobile-adress-box {
+  margin-bottom: 40px;
+}
+.mobile-menu-social-list-item {
+  width: 40px;
+  height: 40px;
+}
+.mobile-adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.moblie-menu-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+/* ============================= MODAL WiNDOW======================= */
 .modal-overlay {
   position: fixed;
   background-color: rgba(46, 47, 66, 0.4);
@@ -721,7 +799,7 @@ footer .social-list-icons-item-link:focus {
   opacity: 0;
   pointer-events: none;
 }
-.is-open {
+.modal-overlay.is-open {
   opacity: 1;
   pointer-events: all;
 }
