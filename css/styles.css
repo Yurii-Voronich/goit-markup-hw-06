@@ -6,6 +6,9 @@
 }
 /* ================ /VARIABLES ================ */
 /* ================ BASIC ================ */
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -120,7 +123,7 @@ body {
     margin-right: 76px;
   }
 }
-.open-menu-button {
+.open-mobile-menu-button {
   border: none;
   padding: 0;
   display: flex;
@@ -133,7 +136,7 @@ body {
 }
 /* tablet */
 @media screen and (min-width: 768px) {
-  .open-menu-button {
+  .open-mobile-menu-button {
     display: none;
   }
 }
@@ -1221,4 +1224,40 @@ footer .social-list-icons-item-link:focus {
 .submit-modal-button:hover,
 .submit-modal-button:focus {
   background: #404bbf;
+}
+.form-message {
+  margin-top: 8px;
+  text-align: center;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #4d5ae5;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background-color: #404bbf;
 }
