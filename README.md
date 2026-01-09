@@ -5,6 +5,7 @@ Live demo 👉 https://yurii-voronich.github.io/goit-markup-hw-06/
 ## 🔎 Project Overview
 
 SOLO project
+
 This is a **responsive landing page** built with plain HTML, CSS and JavaScript as part of the **GOIT HTML/CSS course homework**.  
 The website presents an imaginary digital agency called **Web Studio**, offering business solutions, showcasing features, team members, and portfolio items.
 
@@ -24,6 +25,7 @@ The project is built using:
 ## 📦 Features
 
 ✔ Adaptive design adapted for different screen sizes
+
 ✔ Interactive buttons powered by JavaScript  
 ✔ Modal window open/close logic  
 ✔ Mobile menu toggle  
